@@ -14,5 +14,6 @@ The task is episodic, and in order to solve the environment, the agent must get 
 The main codes are all in the jupyter notebook Navigation.ipynb including the necessary classes and helper functions. 
 The pdf file contains the project report and results.
 The model.pth file contains saved model weights.
+The score.png picture contains the scores over episodes.
 Run all cells in the jupyter notebook to see the training results of the Double-DQN agent.
-The code was written in the Udacity workspace. and the necessary packages and environments are loaded by the first few cells of the notebook in the Udacity workspace, which already has certain packages installed and the environment saved.
+The code was written in the Udacity workspace. and the necessary packages and environments are loaded by the first few cells of the notebook in the Udacity workspace, which already has certain packages installed and the environment saved. 
