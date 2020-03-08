@@ -18,8 +18,8 @@ LR_CRITIC = 3e-4        # learning rate of the critic
 WEIGHT_DECAY = 0        # L2 weight decay
 UPDATE_EVERY = 1        #How many steps to perform until updates are made
 
-EPSILON = 1.0
-EPSILON_DECAY = 3e-3
+EPSILON = 1.0           #noise scaling factor
+EPSILON_DECAY = 3e-3    #noise scaling decay factor
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 class Agent():
@@ -82,7 +82,7 @@ class Agent():
         return np.clip(action, -1, 1)
 
     def reset(self):
-        #noise decay
+        #noise decay, minimum at 0.01
         self.epsilon = max(0.01, self.epsilon-self.epsilon_decay)
         self.noise.reset()
 
