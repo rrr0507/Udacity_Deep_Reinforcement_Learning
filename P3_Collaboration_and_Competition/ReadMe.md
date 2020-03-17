@@ -9,3 +9,5 @@ This yields a single score for each episode.
 The environment is considered solved, when the average (over 100 episodes) of those scores is at least +0.5.
 
 For this task, I modified the DDPG code to a multiagent setting.
+
+The codes are contained in Tennis.ipynb, where the multi-DDPG agent class is in ddpg_multiagent.py and the neural network classes are in model.py. The score.png plot gives the episodic score result. The saved models are stored in .pth files for both agents. The project report is in the pdf file.
